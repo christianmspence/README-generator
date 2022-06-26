@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 // TODO: Create an array of questions for user input
 const questions = () => {
     return inquirer.prompt([
@@ -127,14 +128,19 @@ const questions = () => {
             }
         },
         {
+            type: 'confirm',
+            name: 'confirmCredits',
+            message: 'Would you like to enter any credits for this project?',
+            default: true
+        },
+        {
             type: 'input',
             name: 'credits',
-            message: 'Please provide a list of any collaborators, third-party, and/or tutorials used to create this project. Make sure to provide links. (required)',
-            validate: creditInput => {
-                if (creditInput) {
+            message: 'Please provide a list of any collaborators, third-party assets, and/or tutorials used to create this project. Make sure to provide links. (required)',
+            when: ({ confirmCredits }) => {
+                if (confirmCredits) {
                     return true;
                 } else {
-                    console.log('Please enter your answer!')
                     return false;
                 }
             }
@@ -143,7 +149,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Which license will you use for your project?',
-            choices: ['BSD', 'MIT', 'GPL']
+            choices: ['BSD', 'MIT', 'GPL', 'None']
         },
         {
             type: 'input',
@@ -179,7 +185,9 @@ const questions = () => {
 function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() { }
+function init () {
+
+ }
 
 // Function call to initialize app
 init();
