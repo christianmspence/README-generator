@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/christianmspence/README-generator#readme",
   "dependencies": {
-    "inquirer": "^8.2.4"
+    "inquirer": "^8.2.4",
+    "lorem-ipsum": "^2.0.8"
   }
 }
