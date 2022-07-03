@@ -2,9 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'no license') {
-    return `
-    ![Github licence](http://img.shields.io/badge/license-${license}-blue.svg)
-    `;
+    return `[![${license} license](https://img.shields.io/badge/License-${license}-blue.svg)](${renderLicenseLink(license)})`;
   } else {
     return ' ';
   }
@@ -13,13 +11,16 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license !== 'no license') {
-    return `
-    [${license}](https://choosealicense.com/licenses/${license})
-      `;
-  } else {
-    return ' ';
+  if (license === 'BSD') {
+    return `http://www.linfo.org/bsdlicense.html`
   }
+  if (license === 'MIT') {
+    return `https://lbesson.mit-license.org/`
+  }
+  if (license === 'GPL') {
+    return `http://perso.crans.org/besson/LICENSE.html`
+  }
+
 }
 
 
@@ -28,7 +29,8 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== 'no license') {
     return `
-    ${renderLicenseLink(license)}
+    ## Licenses
+    This project is ocevered under the ${license} license. To learn more about this license, please click the license button at the top of the README.
       `;
   } else {
     return ' ';
@@ -51,7 +53,7 @@ function generateMarkdown(data) {
 ## Table of Contents
   1. [Installation](#installation)
   2. [Usage](#usage)
-  3. [Credits] (#credits)
+  3. [Credits](#credits)
   4. [License](#license)
   5. [Contributing](#contribute)
   6. [Tests](#test)
