@@ -84,7 +84,7 @@ function generateMarkdown(data) {
 
   ## Questions or Comments
   If you have any questions regarding the following project or repo, please contact me at [${data.email}] (mailto:${data.email}). 
-  To view more projects please visit my GitHub at https://github.com/${data.github}.
+  To view more projects please visit my GitHub at https://github.com/${data.username}.
 `;
 }
 
