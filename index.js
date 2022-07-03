@@ -48,7 +48,7 @@ const questions = [
     {
         type: 'input',
         name: 'why',
-        message: 'Why did you you build this project (required)',
+        message: 'Why was this project built? (required)',
         validate: whyInput => {
             if (whyInput) {
                 return true;

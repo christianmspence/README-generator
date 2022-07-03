@@ -45,10 +45,14 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   ## Description
-  * ${data.why}
-  * ${data.what}
-  * ${data.how}
-  * ${data.future}
+  * Why was this project built?:<br/>
+   ${data.why}
+  * What problem does this project solve?:<br/>
+   ${data.what}
+  * How will a user utilize this project?<br/>
+   ${data.how}
+  * Future development plans:<br/>
+   ${data.future}
   
 ## Table of Contents
   1. [Installation](#installation)
