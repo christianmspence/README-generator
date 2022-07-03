@@ -20,6 +20,9 @@ function renderLicenseLink(license) {
   if (license === 'GPL') {
     return `http://perso.crans.org/besson/LICENSE.html`
   }
+  if (license === 'None') {
+    return ''
+  }
 
 }
 
@@ -27,13 +30,17 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license !== 'no license') {
-    return `
-    ## Licenses
-    This project is ocevered under the ${license} license. To learn more about this license, please click the license button at the top of the README.
-      `;
-  } else {
-    return ' ';
+  if (license === 'BSD') {
+    return `This project is ocevered under the ${license} license. To learn more about this license, please click the license button at the top of the README.`
+  }
+  if (license === 'MIT') {
+    return `This project is ocevered under the ${license} license. To learn more about this license, please click the license button at the top of the README.`
+  }
+  if (license === 'GPL') {
+    return `This project is ocevered under the ${license} license. To learn more about this license, please click the license button at the top of the README.`
+  }
+  if (license === 'None') {
+    return 'No license has been selected for this project.'
   }
 }
 
@@ -72,8 +79,7 @@ function generateMarkdown(data) {
   ## Credits
   ${data.credits}
 
-  ## [License]
-  The application is covered under the following license:
+  ## License
   ${renderLicenseSection(data.license)}
 
   ## Contribute

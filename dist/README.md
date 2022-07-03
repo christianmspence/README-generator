@@ -1,16 +1,16 @@
 
-  # hugrhauigriuah
-  [![None license](https://img.shields.io/badge/License-None-blue.svg)](undefined)
+  # uighrhiueagrhiuaehfiarh
+  [![None license](https://img.shields.io/badge/License-None-blue.svg)]()
 
   ## Description
   * Why was this project built?:<br/>
-   hgiurhaiugriuahgria
+   iuhgiurhaeiughriuaehugi
   * What problem does this project solve?:<br/>
-   hugirhaeuihgruiaehfiu
+   hgiuraiughriuahgiar
   * How will a user utilize this project?<br/>
-   ughrhaeiughriueahgaer
+   hgiurhaiughiruahg
   * Future development plans:<br/>
-   hiugyriuahgo;irahfiujdabgrajkl;
+   hiugrhaiuhgiurhaiughr
   
 ## Table of Contents
   1. [Installation](#installation)
@@ -22,26 +22,22 @@
   7. [Questions](#questions)
 
   ## Installation
-  uyfgriuyeahgiuhraiugjrahbg
+  hgiurhaiugriuahghriuaiugrha
 
   ## Usage
-  gbfuyrgaeufhriuahgiureahghriea
+  hgriueahgiuhrahiughrae
 
   ## Credits
   undefined
 
-  ## [License]
-  The application is covered under the following license:
-  
-    ## Licenses
-    This project is ocevered under the None license. To learn more about this license, please click the license button at the top of the README.
-      
+  ## License
+  No license has been selected for this project.
 
   ## Contribute
-  gfuerahfrhaugbraue[
+  hgiurhaeiughriuahgr
 
   ## Tests
-  hgirahgiurhaufh
+  hiughriuahgiurhauig
 
   ## Questions or Comments
   If you have any questions regarding the following project or repo, please contact me at [christianmspence@gmail.com] (mailto:christianmspence@gmail.com). 
