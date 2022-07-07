@@ -29,12 +29,10 @@
       *When finished your README.md file will be complete and in the dist folder. 
 
   ## Usage
-    ```md
-    ![alt text](assets/images/README-generator-walkthru.gif)
-    ```
+![README-generator-walkthru](https://user-images.githubusercontent.com/103942566/177662185-951cd845-fb21-4a33-93ca-fa02e22d6f39.gif)
 
   ## Credits
-  undefined
+  * Matthew Christian Spence
 
   ## License
   This project is ocevered under the MIT license. To learn more about this license, please click the license button at the top of the README.
